@@ -1,0 +1,294 @@
+#-----------------------------------------------------------
+# Vivado v2017.1 (64-bit)
+# SW Build 1846317 on Fri Apr 14 18:54:47 MDT 2017
+# IP Build 1846188 on Fri Apr 14 20:52:08 MDT 2017
+# Start of session at: Tue Jul 23 19:49:27 2019
+# Process ID: 25495
+# Current directory: /BLIND_PATH/PROGETTO_RETI_LOGICHE/VERIFICATION/scripts_with_post_synth_sim
+# Command line: vivado -mode batch -source target_synth.prj -log synth.log
+# Log file: /BLIND_PATH/PROGETTO_RETI_LOGICHE/VERIFICATION/scripts_with_post_synth_sim/synth.log
+# Journal file: /BLIND_PATH/PROGETTO_RETI_LOGICHE/VERIFICATION/scripts_with_post_synth_sim/vivado.jou
+#-----------------------------------------------------------
+CRITICAL WARNING: [Common 17-741] No write access right to the local Tcl store at '/BLIND_PATH/.Xilinx/Vivado/2017.1/XilinxTclStore'. XilinxTclStore is reverted to the installation area. If you want to use local Tcl Store, please change the access right and relaunch Vivado.
+source target_synth.prj
+# read_vhdl  ../src/10492832/10492832.vhdl
+# create_fileset -constrset userConstraints
+# add_files -fileset userConstraints constr.xdc
+# synth_design -top project_reti_logiche -part xc7a200tfbg484-1 -constrset userConstraints -flatten_hierarchy none
+Command: synth_design -top project_reti_logiche -part xc7a200tfbg484-1 -constrset userConstraints -flatten_hierarchy none
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a200t-fbg484'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a200t-fbg484'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 25500 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1176.270 ; gain = 75.992 ; free physical = 29713 ; free virtual = 77113
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'project_reti_logiche' [/BLIND_PATH/PROGETTO_RETI_LOGICHE/VERIFICATION/src/10492832/10492832.vhdl:50]
+INFO: [Synth 8-256] done synthesizing module 'project_reti_logiche' (1#1) [/BLIND_PATH/PROGETTO_RETI_LOGICHE/VERIFICATION/src/10492832/10492832.vhdl:50]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1216.770 ; gain = 116.492 ; free physical = 29720 ; free virtual = 77121
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1216.770 ; gain = 116.492 ; free physical = 29722 ; free virtual = 77122
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a200tfbg484-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/BLIND_PATH/PROGETTO_RETI_LOGICHE/VERIFICATION/scripts_with_post_synth_sim/constr.xdc]
+Finished Parsing XDC File [/BLIND_PATH/PROGETTO_RETI_LOGICHE/VERIFICATION/scripts_with_post_synth_sim/constr.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 1606.809 ; gain = 0.000 ; free physical = 29363 ; free virtual = 76763
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:24 ; elapsed = 00:00:24 . Memory (MB): peak = 1606.809 ; gain = 506.531 ; free physical = 29526 ; free virtual = 76926
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a200tfbg484-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:24 ; elapsed = 00:00:24 . Memory (MB): peak = 1606.809 ; gain = 506.531 ; free physical = 29526 ; free virtual = 76926
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:24 ; elapsed = 00:00:24 . Memory (MB): peak = 1606.809 ; gain = 506.531 ; free physical = 29528 ; free virtual = 76928
+---------------------------------------------------------------------------------
+INFO: [Synth 8-4471] merging register 'o_address_reg[15:0]' into 'current_address_reg[15:0]' [/BLIND_PATH/PROGETTO_RETI_LOGICHE/VERIFICATION/src/10492832/10492832.vhdl:103]
+WARNING: [Synth 8-6014] Unused sequential element o_address_reg was removed.  [/BLIND_PATH/PROGETTO_RETI_LOGICHE/VERIFICATION/src/10492832/10492832.vhdl:103]
+INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'project_reti_logiche'
+WARNING: [Synth 8-6014] Unused sequential element current_state_reg was removed.  [/BLIND_PATH/PROGETTO_RETI_LOGICHE/VERIFICATION/src/10492832/10492832.vhdl:84]
+INFO: [Synth 8-5544] ROM "current_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "current_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+WARNING: [Synth 8-6014] Unused sequential element current_state_reg was removed.  [/BLIND_PATH/PROGETTO_RETI_LOGICHE/VERIFICATION/src/10492832/10492832.vhdl:84]
+WARNING: [Synth 8-6014] Unused sequential element current_state_reg was removed.  [/BLIND_PATH/PROGETTO_RETI_LOGICHE/VERIFICATION/src/10492832/10492832.vhdl:84]
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+             reset_state |                             0000 |                             0000
+         save_data_state |                             0001 |                             0001
+     mask_in_check_state |                             0010 |                             0010
+      read_point_x_state |                             0011 |                             0011
+      read_point_y_state |                             0100 |                             0100
+         dist_calc_state |                             0101 |                             0101
+        dist_check_state |                             0110 |                             0110
+         end_check_state |                             0111 |                             0111
+        set_result_state |                             1000 |                             1000
+            ending_state |                             1001 |                             1001
+                  iSTATE |                             1010 |                             1111
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'current_state_reg' using encoding 'sequential' in module 'project_reti_logiche'
+WARNING: [Synth 8-6014] Unused sequential element current_state_reg was removed.  [/BLIND_PATH/PROGETTO_RETI_LOGICHE/VERIFICATION/src/10492832/10492832.vhdl:84]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:25 ; elapsed = 00:00:25 . Memory (MB): peak = 1606.809 ; gain = 506.531 ; free physical = 29519 ; free virtual = 76919
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     16 Bit       Adders := 2     
+	   3 Input      9 Bit       Adders := 2     
+	   2 Input      9 Bit       Adders := 3     
+	   2 Input      8 Bit       Adders := 1     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 2     
+	  11 Input     16 Bit        Muxes := 1     
+	   2 Input      9 Bit        Muxes := 2     
+	  11 Input      9 Bit        Muxes := 2     
+	   2 Input      8 Bit        Muxes := 4     
+	  11 Input      8 Bit        Muxes := 7     
+	  15 Input      4 Bit        Muxes := 1     
+	  11 Input      1 Bit        Muxes := 16    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module project_reti_logiche 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     16 Bit       Adders := 2     
+	   3 Input      9 Bit       Adders := 2     
+	   2 Input      9 Bit       Adders := 3     
+	   2 Input      8 Bit       Adders := 1     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 2     
+	  11 Input     16 Bit        Muxes := 1     
+	   2 Input      9 Bit        Muxes := 2     
+	  11 Input      9 Bit        Muxes := 2     
+	   2 Input      8 Bit        Muxes := 4     
+	  11 Input      8 Bit        Muxes := 7     
+	  15 Input      4 Bit        Muxes := 1     
+	  11 Input      1 Bit        Muxes := 16    
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 740 (col length:100)
+BRAMs: 730 (col length: RAMB18 100 RAMB36 50)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:26 ; elapsed = 00:00:26 . Memory (MB): peak = 1606.809 ; gain = 506.531 ; free physical = 29509 ; free virtual = 76909
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:36 ; elapsed = 00:00:37 . Memory (MB): peak = 1606.809 ; gain = 506.531 ; free physical = 29384 ; free virtual = 76784
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:36 ; elapsed = 00:00:37 . Memory (MB): peak = 1606.809 ; gain = 506.531 ; free physical = 29381 ; free virtual = 76781
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:36 ; elapsed = 00:00:37 . Memory (MB): peak = 1606.809 ; gain = 506.531 ; free physical = 29381 ; free virtual = 76781
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:37 ; elapsed = 00:00:38 . Memory (MB): peak = 1606.809 ; gain = 506.531 ; free physical = 29381 ; free virtual = 76781
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:37 ; elapsed = 00:00:38 . Memory (MB): peak = 1606.809 ; gain = 506.531 ; free physical = 29381 ; free virtual = 76781
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:37 ; elapsed = 00:00:38 . Memory (MB): peak = 1606.809 ; gain = 506.531 ; free physical = 29381 ; free virtual = 76781
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |    20|
+|3     |LUT1   |    32|
+|4     |LUT2   |    27|
+|5     |LUT3   |    13|
+|6     |LUT4   |    17|
+|7     |LUT5   |    24|
+|8     |LUT6   |    61|
+|9     |FDRE   |    92|
+|10    |FDRE_1 |     4|
+|11    |FDSE   |     9|
+|12    |IBUF   |    11|
+|13    |OBUF   |    27|
++------+-------+------+
+
+Report Instance Areas: 
++------+---------+-------+------+
+|      |Instance |Module |Cells |
++------+---------+-------+------+
+|1     |top      |       |   338|
++------+---------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:37 ; elapsed = 00:00:38 . Memory (MB): peak = 1606.809 ; gain = 506.531 ; free physical = 29381 ; free virtual = 76781
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 5 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 1606.809 ; gain = 116.492 ; free physical = 29436 ; free virtual = 76836
+Synthesis Optimization Complete : Time (s): cpu = 00:00:37 ; elapsed = 00:00:38 . Memory (MB): peak = 1606.809 ; gain = 506.531 ; free physical = 29436 ; free virtual = 76836
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 35 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [/BLIND_PATH/PROGETTO_RETI_LOGICHE/VERIFICATION/scripts_with_post_synth_sim/constr.xdc]
+Finished Parsing XDC File [/BLIND_PATH/PROGETTO_RETI_LOGICHE/VERIFICATION/scripts_with_post_synth_sim/constr.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 4 instances were transformed.
+  FDRE_1 => FDRE (inverted pins: C): 4 instances
+
+17 Infos, 5 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:40 ; elapsed = 00:00:41 . Memory (MB): peak = 1606.809 ; gain = 519.121 ; free physical = 29397 ; free virtual = 76797
+# write_verilog -force ./project_reti_logiche_synth.v -mode funcsim -write_all_overrides
+# exit
+INFO: [Common 17-206] Exiting Vivado at Tue Jul 23 19:50:25 2019...
